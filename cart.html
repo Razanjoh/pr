@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>سلة المشتريات</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* تنسيق العناصر في سلة المشتريات */
+    .cart-container {
+      text-align: center;
+      padding: 20px;
+    }
+    .cart-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .cart-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      width: 200px;
+      background-color: #fff;
+      margin-bottom: 20px; /* تعديل هنا لإضافة تباعد بين العناصر */
+    }
+    .cart-item img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .cart-item p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .payment-link {
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .payment-link:hover {
+      background-color: #0056b3;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <h1>سلة المشتريات</h1>
+
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th>الصورة</th>
+          <th>المنتج</th>
+          <th>السعر</th>
+        </tr>
+      </thead>
+      <tbody class="cart-items">
+      </tbody>
+    </table>
+
+    <!-- رابط الدفع -->
+    <a href="checkout.html" class="payment-link">
+      <i class="fa-regular fa-credit-card"></i>
+      <span>استكمال الدفع</span>
+    </a>
+  </div>
+
+  <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var productName = urlParams.get("name");
+    var productPrice = urlParams.get("price");
+    var productImage = urlParams.get("image");
+
+    var cartTable = document.getElementById("cartTable");
+    var newRow = cartTable.querySelector(".cart-items").insertRow();
+    var imageCell = newRow.insertCell(0);
+    imageCell.innerHTML = '<img src="' + productImage + '" alt="' + productName + '" width="50">';
+    var nameCell = newRow.insertCell(1);
+    nameCell.textContent = productName;
+    var priceCell = newRow.insertCell(2);
+    priceCell.textContent = productPrice;
+  </script>
+</body>
+</html>
+
+
+

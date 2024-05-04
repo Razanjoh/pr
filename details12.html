@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تفاصيل المنتج</title>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .product-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .product {
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        
+        .product-description {
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        
+        .product-price {
+            font-size: 18px;
+            color: #008000;
+            margin-bottom: 20px;
+        }
+        
+        .product-button {
+            display: block;
+            padding: 10px 20px;
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .product-button:hover {
+            background-color: #555555;
+        }
+    
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="prodct12.webp" alt="صورة المنتج">
+    </div>
+    <div class="product-details">
+      <h1 class="product-title"> هودي</h1>
+      <p class="product-price">السعر: 400 ريال</p>
+      <div class="product-info">
+        <h2>معلومات إضافية</h2>
+        <p>    هذه القطعة المريحة مثالية للأيام الأكثر برودة، حيث توفر الراحة والأناقة معًا.</p>
+      </div>
+      <button id="addToCartBtn">إضافة إلى السلة</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("addToCartBtn").addEventListener("click", function() {
+      var productName = document.querySelector(".product-title").textContent;
+      var productPrice = document.querySelector(".product-price").textContent;
+      var productImageSrc = document.querySelector(".product-image img").src;
+
+      var url = "cart.html";
+      url += "?name=" + encodeURIComponent(productName);
+      url += "&price=" + encodeURIComponent(productPrice);
+      url += "&image=" + encodeURIComponent(productImageSrc);
+
+      // توجيه المستخدم إلى صفحة السلة مع المعلومات المحددة
+      window.location.href = url;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>متجر الكتروني</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+
+  <!--Font Awesome Library-->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+    rel="stylesheet"    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <a href="cart.html" style="color: #ffffff;">
+        <i class="fas fa-cart-shopping"></i>
+        <span id="cartCounter">0</span>
+      </a>      
+      
+    <a href="login.html">
+    <i class="fa-solid fa-user"></i>
+  </a>
+  <input type="text" id="searchInput" placeholder="ابحث هنا...">
+  <button id="searchBtn">ابحث</button>
+
+  <script>
+      var searchBtn = document.getElementById("searchBtn");
+      var searchInput = document.getElementById("searchInput");
+
+      function performSearch() {
+          var searchTerm = searchInput.value;
+          
+          alert("تم البحث عن: " + searchTerm);
+      }
+
+      searchBtn.addEventListener("click", performSearch);
+  </script>    <h1></h1>
+    <img class="logo" src="" alt="">
+    <div class="header">
+      <div class="container">
+         
+          <div class="links">
+              <span class="icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </span>
+    <nav>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">عن الشركة</a></li>
+        <li><a href="#">المنتجات</a></li>
+        <li><a href="#">الخدمات</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- الرئيسية -->
+
+  <section>
+    <div class="about">
+      <h2>الاكثر مبيعًا  </h2>
+    </div>
+    <div class="product">
+        <img src="prodct1.webp" alt="منتج 1">
+        <h3>هودي ابيض-اسود </h3>
+        <p>تصميم متعدد الطبقات</p>
+        <button id="buyNowBtn">اشتر الآن</button>
+      </div>
+
+    <div class="product">
+      <img src="prodct2.webp" alt="منتج 2">
+      <h3>قميص بولو  </h3>
+      <p>رمادي داكن  </p>
+      <button id="buyNowBtn2">اشتر الآن</button>
+    </div>
+    
+    <div class="product">
+        <img src="prodct3.webp" alt="منتج 3">
+        <h3>قميص بولو  </h3>
+        <p>رمادي   </p>
+      <button id="buyNowBtn3">اشتر الآن</button>
+    </div>
+      <div class="product">
+        <img src="prodct4.webp" alt="منتج 4">
+        <h3>هودي  </h3>
+      <p>هودي اوفر سايز-احمر  </p>
+      <button id="buyNowBtn4">اشتر الآن</button>
+      </div>
+      <div class="product">
+        <img src="prodct5.webp" alt="منتج 5">
+        <h3>هودي  </h3>
+        <p>هودي اوفر سايز-اخضر  </p>
+        <button id="buyNowBtn5">اشتر الآن</button>
+    </div>
+
+  </section>
+ 
+
+  <div class="about">
+    <h2>عن الشركة </h2>
+  </div>
+  <div class="company">
+    <title>صفحة الشركة والمتجر</title>
+    <h1>نشأة الشركة</h1>
+<p>هي شركة ناشئة تهدف إلى تقديم تشكيلة ملابس متنوعة وعصرية تناسب أذواق العملاء</p>  
+    <h1>رؤيتنا</h1>
+<p> أن نصبح العلامة التجارية الرائدة في مجال الموضة والأزياء، وأن نكون الاختيار الأول للعملاء الذين يبحثون عن ملابس تناسب أذواقهم وتعكس أسلوبهم الشخصي</p>  
+    <h1>رسالتنا</h1>
+    <p>رسالتنا هي تقديم منتجات وخدمات عالية الجودة تلبي احتياجات عملائنا وتساهم في تحقيق نجاحهم.</p>
+  
+    <h1>أهدافنا</h1>
+    <ul>
+      <ol>تحقيق رضا العملاء من خلال تقديم منتجات وخدمات متميزة.</ol>
+      <ol>تعزيز الابتكار والتطوير المستمر في جميع جوانب أعمالنا.</ol>
+      <ol>بناء فريق عمل متحمس ومؤهل يعمل بروح الفريق.</ol>
+    </ul>
+  </div>
+
+  <div class="about">
+  <h2>قائمة المنتجات</h2>
+</div>
+  <ul class="product-list">
+    <li>
+      <a href="details.html">
+        <img src="prodct1.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details2.html">
+        <img src="prodct2.webp" alt="منتج 2">
+      </a>
+    </li>
+    <li>
+      <a href="details3.html">
+        <img src="prodct3.webp" alt="منتج 3">
+      </a>
+    </li>
+    <li>
+      <a href="details4.html">
+        <img src="prodct4.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details5.html">
+        <img src="prodct5.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details6.html">
+        <img src="prodct6.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details7.html">
+        <img src="prodct7.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details8.html">
+        <img src="prodct8.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details9.html">
+        <img src="prodct9.webp" alt="منتج 1">
+      </a>
+    </li>
+    <a href="details10.html">
+      <img src="prodct10.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details11.html">
+        <img src="prodct11.webp" alt="منتج 1">
+      </a>
+    </li>
+    <li>
+      <a href="details12.html">
+        <img src="prodct12.webp" alt="منتج 1">
+      </a>
+    </li>
+  </ul>
+  <div class="about">
+    <h2>اتصل بنا</h2>
+</div>
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <label for="name">الاسم:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">الرسالة:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">إرسال</button>
+</form>
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2024</p>
+  </footer>
+ 
+</body>
+</html>

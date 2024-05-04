@@ -1,0 +1,317 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+  }
+  /* بداية الهيدر */
+  header {
+    background-color: #1b1818c4;
+    color: #fff;
+    padding: 20px;
+
+    
+  }
+
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+  font-family: 'Work Sans', sans-serif;
+}
+.header .links {
+    position: relative;
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+
+.header .links .icon { 
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-end; 
+}
+.header .links .icon span { 
+    background-color: #ffffff;
+    margin-bottom: 5px; 
+    height: 2px;
+
+}
+.header .links .icon span:first-child { 
+     width: 100%;
+
+}
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition:0.5;
+    -webkit-transition:0.5;
+    -moz-transition:0.5;
+    -ms-transition:0.5;
+    -o-transition:0.5;
+}
+.header .links .icon span:last-child { 
+    width: 100%;
+}
+.header .links  ul{
+    list-style: none;
+    margin: 0;
+    background-color: #f6f6f6;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none; 
+    z-index: 1;
+
+}
+.header .links  ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+
+}
+.header .links:hover  ul{
+    display: block;
+}
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #000000;
+  
+}
+.header .links ul li a:hover {
+    padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ffffff;
+}
+  
+/* نهاية الهيدر */
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:rgba(199, 197, 197, 0.292);
+  }
+  .about h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .cart-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .payment-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .payment-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .payment-link span {
+    font-weight: bold;
+  }
+  .fa-solid {
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+  
+  .product img {
+    width: 150px;
+    height: 150px;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color:  #0d43f5;    ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #776f75;
+  }
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .product-list img {
+    width: 200px;
+    height: 200px;
+  }
+  /* نبذة الشركة */
+  .company {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .company    h1 {
+    background-color: #a4a4a4b7;
+    color: #0d43f5;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .company  p {
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+
+  }
+
+  .company ul {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+  /* الاتصال بنا */
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:rgba(176, 176, 176, 0.662);
+  }
+  .contact h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .cart-items img {
+    width: 100px; 
+    height: auto; 
+  }
+  

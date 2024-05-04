@@ -1,0 +1,34 @@
+<!-- منتج 1 -->
+<div class="product-container">
+    <div class="product-image">
+      <img src="prodct1.webp" alt="صورة المنتج 1">
+    </div>
+    <div class="product-details">
+      <h1 class="product-title">منتج 1</h1>
+      <p class="product-price">السعر: 100 ريال</p>
+      <a href="#" class="product-button" onclick="addToCart('منتج 1', '100 ريال', 'prodct1.webp')">إضافة إلى السلة</a>
+    </div>
+  </div>
+  
+  <!-- منتج 2 -->
+  <div class="product-container">
+    <div class="product-image">
+      <img src="prodct2.webp" alt="صورة المنتج 2">
+    </div>
+    <div class="product-details">
+      <h1 class="product-title">منتج 2</h1>
+      <p class="product-price">السعر: 150 ريال</p>
+      <a href="#" class="product-button" onclick="addToCart('منتج 2', '150 ريال', 'prodct2.webp')">إضافة إلى السلة</a>
+    </div>
+  </div>
+  
+  <script>
+    function addToCart(productName, productPrice, productImageSrc) {
+      var url = "cart.html";
+      url += "?name=" + encodeURIComponent(productName);
+      url += "&price=" + encodeURIComponent(productPrice);
+      url += "&image=" + encodeURIComponent(productImageSrc);
+      window.location.href = url;
+    }
+  </script>
+  
